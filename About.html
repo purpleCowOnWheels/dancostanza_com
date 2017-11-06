@@ -1,31 +1,23 @@
 <html>
   <head>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Oxygen:400;300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400;300' rel='stylesheet' type='text/css'>
-    <link href='style.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
   </head>
 
-  <body> <div class="background">
+  <body>
     <div class="menu">
       
       <!-- Menu icon -->
       <div class="icon-close">
         <img style="width:30px" src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
       </div>
-      <div class="icon-menu">
-        <i class="fa fa-bars"></i>
-        Menu
-      </div>
-
       <!-- Menu -->
       <ul>
-        <li><a href="About">About</a></li>
-        <li><a href="Projects">Projects</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Projects.html">Projects</a></li>
         <li><a href="#" id="pictures">Pictures</a>
           <ul id="picturesSubMenu" class="hidden">
             <li><a href="Pictures/People">People</a></li>
@@ -38,14 +30,19 @@
     </div>
 
     <!-- Main body -->
+    <div class="icon-menu black">
+        <i class="fa fa-bars black"></i>
+        Menu
+    </div>
+
     <div class="row">
       <div class="primaryHeader">Dan Costanza</div>
       <div class=centerBlock>
         <img src="images/Dan_Nate_v01.JPG" height="25%">
     </div>
-    <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
-    </div>
+<!--    <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>-->
     <hr class="hrDivider1">
+    </div>
     <div class="row">
       <div class="col-xs-6">
         <div class="primaryHeader">Becca Licht</div>
@@ -61,9 +58,11 @@
         </div>
         <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
       </div>
-      
+    </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-    <script src="app.js"></script>
-  </div> </body>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="app.js"></script>
+  </body>
 </html>
