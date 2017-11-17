@@ -1,8 +1,14 @@
+html {
+  width: 100% ! important;
+  height: 100% ! important;
+}
+
 /* Initial body */
 body {
   left: 0;
-  margin-right: 5%;
-  overflow: hidden;
+  margin: 0%;
+  height: 100%;
+  overflow: cover;
   position: relative;
   background-color: aliceblue
 }
@@ -15,8 +21,6 @@ body {
   position: fixed;
   width: 285px;
 }
-
-/* Basic styling */
 
 .jumbotron {
   /*background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png');*/
@@ -53,7 +57,7 @@ body {
 
 .icon-close {
   cursor: pointer;
-  /*width: 10px ! important;*/
+  width: 10px ! important;
   padding-left: 10px;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -63,12 +67,13 @@ body {
   color: #fff;
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 25px;
   padding-left: 25px;
   padding-top: 25px;
   text-decoration: none;
   text-transform: uppercase;
+  width: 125px ! important;
 }
 
 .icon-menu i {
@@ -79,8 +84,42 @@ body {
   display: none;
 }
 
+.vertDivider {
+  border-right: medium darkgrey solid;
+  width: 25px;
+  float: left;
+  height: 185px;
+}
+
+.leftBlockWrapper {
+  width: 250px;
+  float: left;
+}
+
+.leftBlock {
+  text-align: left;
+  width: 60%;
+  float: left;
+}
+
+.centerBlockWrapper {
+  width: 600px;
+  float: left;
+}
+
 .centerBlock {
   text-align: center;
+  width: 60%;
+}
+
+.rightBlockWrapper {
+  width: 250px;
+  float: left;
+}
+
+.rightBlock {
+  text-align: right;
+  width: 60%;
 }
 
 .primaryHeader {
@@ -93,6 +132,16 @@ body {
   font-weight: bolder
 }
 
+.nameHeader {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 .black {
   color: #000;
 }
@@ -103,7 +152,25 @@ body {
   border-width: 3px;
 }
 
+.hrDividerLite {
+  display: block;
+  border-style: inset;
+  border-width: 1px;
+}
+
 .row {
   padding-left: 50px !important;
   margin-right: 5% !important;
+  width: 100%;
+}
+
+.img-circ-border {
+  width: 150px;
+  height: 150px;
+  border-color: darkgrey;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+  text-align: center;
+  object-fit: cover
 }
