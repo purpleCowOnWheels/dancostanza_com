@@ -23,7 +23,8 @@ var main = function() {
   
   /*toggle the sub-menu on pictures on and offs*/
   $('#pictures').click(function(){
-    $('#picturesSubMenu').toggle(10);
+//    alert( $('#picturesSubMenu').attr('id') )
+    $('#picturesSubMenu').toggle('hidden_custom');
   });  
 };
 
