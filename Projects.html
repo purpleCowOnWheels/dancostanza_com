@@ -42,8 +42,9 @@
           <hr class="hrDividerLite">
             <div class=leftBlockWrapper>
               <div class=leftBlock>
-                <div class="nameHeader">Dan Costanza</div>
-                <img class="img-circ-border" src="images/Dan_on_Bike_v01.JPG">
+                <div class="nameHeader">NFL Suicide Pool Optimizer</div>
+                <img class="img-circ-border" src="images/nflLogo_v01.png" style="border-width: 0px;">
+<!--                style="border-radius:1%; border-width: 1px;"-->
               </div>
               <div class="vertDivider"></div>  
             </div>
@@ -51,33 +52,29 @@
             <div class="centerBlock">
               <ol class="circBullet" style="list-style-type=disc">
                 <li>
-                  <a href="https://www.dropbox.com/s/0my7aq9krsh1hmm/Daniel_Costanza_Resume_Latest.pdf?dl=0">Resume</a> | 
-                  <a href="https://www.dropbox.com/s/0my7aq9krsh1hmm/Daniel_Costanza_Resume_Latest.pdf?dl=0">Github</a> |
-                  <a href="https://www.linkedin.com/in/daniel-costanza-73882814/">LinkedIn</a> |
-                  <a href="https://photos.app.goo.gl/1oy4e2CNrS8m7HPd2">Winnie Snoozing</a> |
-                  <a href="https://photos.app.goo.gl/GHBlwEtmvsoNVL9x2">Nana's Pasta Sauce</a>
+                  <a href="https://656j84iki4.execute-api.us-east-1.amazonaws.com/prod/api/nflopt/getoptpath?param1=test2">Optimize Full Season with Exponential Value Decay (Temp. API; full version coming soon)</a> | 
+                  <a href="https://656j84iki4.execute-api.us-east-1.amazonaws.com/prod/api/nflopt/getoptpath/test">Optimize 10 Weeks, No Value Decay (Temp. API; full version coming soon)</a> | 
+                  <a href="https://github.com/purpleCowOnWheels/NFLSuicidePoolOptimizer">Source Code</a>
                 </li>
                 <li>
-                  <div class="nameSubHeader">Mission Statement</div>
-                  My life goals are fairly simple: surround myself with good people, build relationships, learn, challenge myself, and have fun.
-                  <br><br>
-                  The most important things in my life are my family and my friends. From there I solve for everything else. In my career, I don't aspire to be a CEO but rather to see where I can go with the simple combination of working hard, finding fun and interesting projects, and treating people well.
-                  <br>
-    <!--              <br>"When the great scorekeeper comes...its not whether you won or lost, but how you played the game" - Grantland Rice-->
-                  <br>"To give anything less than your best is to sacrifice the gift" - Pre
-    <!--              <br>"It does not do to dwell on dreams and forget to live" - J.K. Rowling / Albus Dumbledore-->
-    <!--              <br>"A life is not important except for the impact it has on others" - Jackie Robinson-->
-    <!--              <br>"We're off to find trouble, I think we shall find it" - Sir Tom Phillips-->
+                  <div class="nameSubHeader">What Is a Suicide Pool?</div>
+                  Suicide pools are a common and very fun office pool in which you are required to pick a winner of an NFL game each week. If your pick is right (straight up / no spread or odds), you advance. If it is wrong, you're eliminated. Last man or woman standing wins. For this tool I've built in the following standard rules:
+                    <ol class="circBullet" style="list-style-type=circle">
+                      <li>One pick per week</li>
+                      <li>Single elimination with no "buying back in"</li>
+                      <li>You cannot pick the same winning team twice in the season</li>
+                    </ol>
                 </li>
                 <li>
-                  <div class="nameSubHeader">Why Hire Me?</div>
-                  I'm a grinder. I learned how to work growing up on a farm in Pennsylvania where your job is to get it done. There are no excuses if the chickens get eaten. Sometimes this is done by coming up with the clever way, but equally often by knowing when to just get your hands dirty and do it.
+                  <div class="nameSubHeader">So What's It Actually Optimizing?</div>
+                  Since its very unlikely for a player to survive for the full season, the objective is to maximize the probability that you outlast all opponents in your pool. The key is to use win probabilities to survive early, but also to look at future matchups to ensure good teams are saved when they will be needed in the future. To do so, it implements a few simple tools:
+                    <ol class="circBullet" style="list-style-type=circle">
+                      <li>Pairwise match-up win probabilities, implied from 538.com's published FPI rankings</li>
+                      <li>Informed random samples of winners each week</li>
+                    </ol>
+                  From each of these paths, the model updates and begins to converge by identifying team-week pairs that very regularly result it high-value paths. While it is parameterized to try to keep the chances of a global maxima high, it may converge to a local max. 
                   <br><br>
-                  I went to Williams college where I rowed internationally against opponents who averaged 4 inches and 50 pounds larger than I, and competed by spending 6 hours a day in the gym, doing math problem sets at 135 bpm on a bike. I'm not the best mathematician, but I succeed with creativity, hard work and the ability to see comparbility in seemingly dispareate projects.
-                  <br><br>
-                  To an office, I bring a history of top performance. I find interesting, high impact projects, get excited about them, use my math and cs to solve the parts I can, am unafraid to learn the things I don't, and know when to turn on the farmboy switch and simply grind and execute.
-                  <br><br>
-                  In short, you can go get another Harvard kid who looks the part and might crush me on a math test, but if you want interesting and business generating ideas, executed effectively and on time, you should hire me instead.
+                  The naive/simple implementation would be to simply optimize for your survival over the full season, however this can result in saving good teams for future weeks that may be valueless (if all opponents are eliminated) while lowering your survival chances this week. As such, the tool is built to optimize either linearly or with an exponential decay over either a fixed number of weeks or the full remaining season. 
                 </li>
               </ol>
             </div>
@@ -85,67 +82,6 @@
         </div>
 <!--      </tr>-->
 
-<!--      <tr style="height=50% ! important">-->
-        <div class="row">
-          <hr class="hrDividerLite">
-          <div class=leftBlockWrapper>
-            <div class=leftBlock>
-              <div class="nameHeader">Becca Licht</div>
-              <img class="img-circ-border" src="images/Rotaka_Winnie_v01.JPG">
-            </div>
-            <div class="vertDivider"></div>  
-          </div>
-          <div class="centerBlockWrapper">
-            <div class="centerBlock">
-              <ol class="circBullet" style="list-style-type=disc">
-                <li>
-                  <a href="#">Something</a> | 
-                  <a href="#">Something</a> |
-                  <a href="https://www.linkedin.com/in/rebecca-licht-1b827a24/">LinkedIn</a> |
-                  <a href="#">Something</a> |
-                  <a href="#">Something</a>
-                </li>
-                <li>
-                  <div class="nameSubHeader">Who Is Becca?</div>
-                  Becca is a magical person. She's brilliant, bold, stong and kind. She pushes me every day to be a better person, and impresses me with her ability and work ethic.
-                  <br>
-                  <br>More to come!
-              </ol>
-            </div>
-          </div>
-        </div>
-<!--      </tr>-->
-
-<!--      <tr>-->
-        <div class="row">
-          <hr class="hrDividerLite">
-          <div class=leftBlockWrapper>
-            <div class=leftBlock>
-              <div class="nameHeader">Winnie C.</div>
-              <img class="img-circ-border" src="images/WinniePirate_v01.jpg">
-            </div>
-            <div class="vertDivider"></div>  
-          </div>
-          <div class="centerBlockWrapper">
-            <div class="centerBlock">
-              <ol class="circBullet" style="list-style-type=disc">
-                <li>
-                  <a href="https://photos.app.goo.gl/xtQpLIQcoN0Kifan1">Glamor Shot</a> | 
-                  <a href="https://photos.app.goo.gl/5EoLjuxSU0VcWJFz1">Snuggles</a> |
-                  <a href="https://photos.app.goo.gl/4rIhmvm3fJ4HfDMe2">Belly Rubs</a> |
-                  <a href="https://photos.app.goo.gl/0aa6ZIuQkI8uXSW53">Sticks</a> |
-                  <a href="https://photos.app.goo.gl/IAft3M5M5aetGHbU2">Girl Time</a>
-                </li>
-                <li>
-                  <div class="nameSubHeader">Who Is Winnie?</div>
-                  Winnie is the snuggliest dog in town. She loves tennis balls, sticks, belly rubs, running, not running, playing, hoarding toys, sharing toys, and cheese.
-                  
-                  <br>
-                  <br>More to come!
-              </ol>
-            </div>
-          </div>
-    </div>
 <!--      </tr>-->
 <!--    </table>-->
     <div class="row">
