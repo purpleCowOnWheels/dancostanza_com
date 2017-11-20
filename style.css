@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 html {
   width: 100% ! important;
   height: 100% ! important;
@@ -106,7 +105,7 @@ body {
 }
 
 .centerBlockWrapper {
-  width: 650px;
+  width: 950px;
   height: 100%;
   float: left;
   margin-left: -75px;
@@ -181,7 +180,8 @@ body {
   padding-bottom: 50px;
   margin-right: 5% !important;
   width: 100%;
-  overflow: auto;
+  height: 500px;
+  overflow: hidden;
 }
 
 .rowSmall {
@@ -206,181 +206,3 @@ body {
 .circBullet {
     list-style-type: disc;
 }
-=======
-html {
-  width: 100% ! important;
-  height: 100% ! important;
-}
-
-/* Initial body */
-body {
-  left: 0;
-  margin: 0%;
-  height: 100%;
-  overflow: cover;
-  position: relative;
-  background-color: aliceblue
-}
-
-/* Initial menu */
-.menu {
-  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
-  left: -285px;  /* start off behind the scenes */
-  height: 100%;
-  position: fixed;
-  width: 285px;
-}
-
-.jumbotron {
-  /*background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png');*/
-  background-image: url("images/WinniePirate_v01.jpg");
-  height: 100%;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-}
-
-.menu ul {
-  border-top: 1px solid #636366;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  border-bottom: 1px solid #636366;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 45px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-top: 3px;
-}
-
-.menu a {
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.icon-close {
-  cursor: pointer;
-  width: 10px ! important;
-  padding-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.icon-menu {
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-top: 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 125px ! important;
-}
-
-.icon-menu i {
-  margin-right: 5px;
-}
-
-.hidden_custom {
-  display: none;
-}
-
-.vertDivider {
-  border-right: medium darkgrey solid;
-  width: 25px;
-  float: left;
-  height: 185px;
-}
-
-.leftBlockWrapper {
-  width: 250px;
-  float: left;
-}
-
-.leftBlock {
-  text-align: left;
-  width: 60%;
-  float: left;
-}
-
-.centerBlockWrapper {
-  width: 600px;
-  float: left;
-}
-
-.centerBlock {
-  text-align: center;
-  width: 60%;
-}
-
-.rightBlockWrapper {
-  width: 250px;
-  float: left;
-}
-
-.rightBlock {
-  text-align: right;
-  width: 60%;
-}
-
-.primaryHeader {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
-  font-size: 20px;
-  text-decoration: underline;
-/*  text-transform: uppercase;*/
-  font-weight: bolder
-}
-
-.nameHeader {
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
-  font-size: 20px;
-  font-weight: bolder;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.black {
-  color: #000;
-}
-
-.hrDivider1 {
-  display: block;
-  border-style: inset;
-  border-width: 3px;
-}
-
-.hrDividerLite {
-  display: block;
-  border-style: inset;
-  border-width: 1px;
-}
-
-.row {
-  padding-left: 50px !important;
-  margin-right: 5% !important;
-  width: 100%;
-}
-
-.img-circ-border {
-  width: 150px;
-  height: 150px;
-  border-color: darkgrey;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 50%;
-  text-align: center;
-  object-fit: cover
-}
->>>>>>> f971ba45093bcb87e72736f4217f23525c676740
